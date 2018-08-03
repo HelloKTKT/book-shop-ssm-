@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd" > 
+  
+<mapper namespace="com.kt.Mapper.BooksMapper"> 
+ 
+
+<select id="findAllBooks"  resultType="Books" parameterType="int">
+select * from books order by BookID desc limit #{start},7;
+</select>
+<insert id="addbook" parameterType="Books" >
+insert into books(Name,Author,Publisher,Prive,intro,pic) values(#{name},#{author},#{publisher},#{prive},#{intro},#{pic});
+</insert>
+<select id="findBooksById"  resultType="Books" parameterType="int">
+select * from books where BookID=#{id}
+</select>
+<update id="updateBooksById" parameterType="Books">
+update books set Name=#{name},Author=#{author},Publisher=#{publisher},Prive=#{prive},intro=#{intro},pic=#{pic} where BookID=#{bookID};
+</update>
+<delete id="deleteBooksById" parameterType="int">
+delete from books where BookID=#{id}
+</delete>
+<select id="countBooks"  resultType="int">
+SELECT COUNT(*) FROM books
+</select>
+
+</mapper>  

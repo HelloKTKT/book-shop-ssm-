@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="config"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="melibrary.com.genuitec.eclipse.j2eedt.core.MYECLIPSE_JAVAEE_6_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/aopalliance-1.0.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/asm-3.3.1.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/aspectjrt-1.8.13.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/aspectjweaver-1.8.13.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/c3p0-0.9.5.2.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/cglib-2.2.2.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/commons-logging-1.2.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/commons-pool-1.6.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/javassist-3.12.1.GA.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/javax.servlet.jsp.jstl.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/jsf-api.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/jsf-impl.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/jstl-1.2.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/jstl-impl.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/log4j-1.2.17.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/log4j-api-2.11.0.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/log4j-core-2.11.0.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/mchange-commons-java-0.2.15.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/mybatis-3.4.5.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/mybatis-spring-1.3.1.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/mysql-connector-java-5.0.8-bin.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/slf4j-api-1.7.25.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/slf4j-log4j12-1.7.25.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/spring-aop-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/spring-aspects-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/spring-beans-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/spring-context-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/spring-context-support-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/spring-core-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/spring-expression-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/spring-jdbc-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/spring-orm-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/spring-test-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/spring-tx-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/spring-web-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/ssm/spring-webmvc-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/commons-io-1.4.jar"/>
+	<classpathentry kind="lib" path="F:/java tools/commons-fileupload-1.3.jar"/>
+	<classpathentry kind="output" path="WebRoot/WEB-INF/classes"/>
+</classpath>

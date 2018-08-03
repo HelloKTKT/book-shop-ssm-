@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="BooksAdmin"
+  id="myeclipse.1526820502640"
+  context-root="/BooksAdmin"
+  j2ee-spec="6.0"
+  archive="BooksAdmin.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

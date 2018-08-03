@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xmlns:context="http://www.springframework.org/schema/context"  
+    xmlns:aop="http://www.springframework.org/schema/aop" 
+    xmlns:tx="http://www.springframework.org/schema/tx" 
+    xsi:schemaLocation="  
+        http://www.springframework.org/schema/beans  
+        http://www.springframework.org/schema/beans/spring-beans.xsd  
+        http://www.springframework.org/schema/context  
+        http://www.springframework.org/schema/context/spring-context.xsd 
+        http://www.springframework.org/schema/tx
+        http://www.springframework.org/schema/tx/spring-tx-3.1.xsd 
+        http://www.springframework.org/schema/aop  
+        http://www.springframework.org/schema/aop/spring-aop.xsd">  
+        
+        <context:property-placeholder location="classpath:db.properties"/>
+        
+        <context:component-scan base-package="com.kt.Service" />
+		
+		<!-- 连接池 -->
+		<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="${jdbc.driver}"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value=""></property>
+		<property name="url" value="jdbc:mysql://localhost:3306/shoppingcart"></property>
+		</bean>
+		
+		<!-- SqlSessionFactory -->
+		<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+		<!-- 配置数据源 -->
+		<property name="dataSource" ref="dataSource"></property>
+		<!-- 加载pojo命名空间 -->
+		<property name="typeAliasesPackage" value="com.kt.entity" />
+			<!-- 加载Mybatis配置文件 -->
+		<property name="configLocation" value="classpath:SqlMapConfig.xml"/>
+		</bean>
+		
+		<!-- 扫描Mapper 自动为接口创建对象-->
+		<bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+		<property name="basePackage" value="com.kt.Mapper"></property>
+		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
+
+		</bean>
+		
+		<!-- 配置spring的PlatformTransactionManager，名字为默认值 -->  
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">  
+        <property name="dataSource" ref="dataSource" />  
+    </bean>  
+      
+    <!-- 开启事务控制的注解支持 -->  
+    <tx:annotation-driven transaction-manager="transactionManager"/>
+
+
+	</beans>
